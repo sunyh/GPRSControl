@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">国产GPRS流量监控</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">GPRS监控</string>
+    <string name="setting">设置阀值</string>
+    <string name="unit">单位(M)</string>
+    <string name="checkbox">流量超过阀值后是否打开网络设置界面(仅在后台运行时)</string>
+    <string name="dayGPRSMax">GPRS阀值(天)</string>
+    <string name="dayWifiMax">Wifi阀值(天)</string>
+    <string name="monthGPRSMax">GPRS阀值(月)</string>
+    <string name="monthWifiMax">Wifi阀值(月)</string>
+
+</resources>

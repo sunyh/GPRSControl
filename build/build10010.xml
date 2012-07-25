@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ================================================ -->
+<!-- Build an Android project. -->
+<!-- http://kb.cnblogs.com/a/2093674/ -->
+<!-- ================================================ -->
+<project name="gprs-10010-安智市场" basedir="." default="out">
+	<property name="tarPath" value="H:/apache-ant-1.8.4/bin/${ant.project.name}"/>
+	<property name="tarPath.bin" value="${tarPath}/bin"/>
+	<property name="tarPath.libs" value="${tarPath}/libs"/>
+	
+	<property name="android-sdk" value="H:/android-sdk_r20-windows/android-sdk-windows"/>
+	<property name="android-sdk-tools" value="${android-sdk}/tools"/>
+	<property name="android-sdk-platforms" value="${android-sdk}/platforms"/>
+	<property name="android-sdk-platform-tools" value="${android-sdk}/platform-tools"/>	
+	
+	<property name="signed.apk" value="${tarPath.bin}/${ant.project.name}-signed-${version}.apk"/>
+    <property name="unsigned.apk" value="${tarPath}\bin\${ant.project.name}-unsigned-${version}.apk" />   
+	<property name="release.apk" value="${tarPath.bin}/${ant.project.name}-release-${version}.apk"/>
+	
+	<target name="delete">
+		<echo>building project... 版本为 ${version}</echo>
+		<echo>先删除历史文件</echo>
+		<delete dir="${tarPath}"/>
+	</target>
+	<target name="create" depends="delete">
+		<mkdir dir="${tarPath}"/>
+	</target>
+	<target name="copyFile" depends="create">
+		<echo>从 ${projectPath}拷贝文件到</echo>
+		<copy overwrite="true" toDir="${tarPath}" verbose="true">
+			<fileset dir="${projectPath}">
+			</fileset>
+		</copy>
+		<replace encoding="utf-8" file="${tarPath}/AndroidManifest.xml" token="-1" value="10010"/>
+		<replace encoding="utf-8" file="${tarPath}/AndroidManifest.xml" token="-2" value="goapk"/>
+	</target>
+	<!-- 定义自己的输出目录 -->
+	<property name="outdir" value="${tarPath}"/>
+	<property name="outdir-classes" value="${tarPath.bin}/classes"/>
+	<property name="outdir-gen" value="${tarPath}/gen"/>
+	<!-- 初始化 -->
+	<target name="init" depends="copyFile">
+		<echo>Creating all output directories </echo>
+		<delete dir="${outdir-classes}"/>
+		<delete dir="${outdir-gen}"/>
+		<mkdir dir="${outdir-classes}"/>
+		<mkdir dir="${outdir-gen}"/>
+	</target>
+	<!-- 步骤 1： aapt生成R.java -->
+	<property name="android-jar" value="${android-sdk-platforms}/android-10/android.jar"/>
+	<property name="aapt" value="${android-sdk-platform-tools}/aapt.exe"/>
+	<property name="resource-dir" value="${tarPath}/res"/>
+	<property name="assets-dir" value="${tarPath}/assets"/>
+	<target name="resource-src" depends="init">
+		<echo>获取 R.java...</echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package"/>
+			<arg value="-m"/>
+			<arg value="-J"/>
+			<arg value="${outdir-gen}"/>
+			<arg value="-M"/>
+			<arg value="${tarPath}\AndroidManifest.xml"/>
+			<arg value="-S"/>
+			<arg value="${resource-dir}"/>
+			<arg value="-I"/>
+			<arg value="${android-jar}"/>
+		</exec>
+	</target>
+	<!-- 步骤 2. 编译所有class文件. -->
+	<target name="compile" depends="resource-src">
+		<echo>java 编译为class文件</echo>
+		<javac encoding="utf-8" bootclasspath="${android-jar}" classpath="${tarPath.libs}/youmi-android_v3.07_2012-05-04.jar;${tarPath.libs}/gfansdk_statistics.jar" debug="true" destdir="${outdir-classes}" extdirs="" includeantruntime="on" srcdir="${tarPath}" target="1.6"/>
+	</target>
+	<!-- 步骤 3. 转换class文件为dex文件. -->
+	<property name="dx" value="${android-sdk-platform-tools}/dx.bat"/>
+	<!-- 临时类资源文件 -->
+	<property name="dex-file" value="classes.dex"/>
+	<property name="intermediate-dex" value="${tarPath.bin}/${dex-file}"/>
+	<target name="dex" depends="compile">
+		<echo>转换class文件为dex文件</echo>
+		<apply executable="${dx}" failonerror="true" parallel="true">
+			<arg value="--dex"/>
+			<arg value="--output=${intermediate-dex}"/>
+			<arg path="${outdir-classes}"/>
+			<fileset dir="${tarPath.libs}" includes="*.jar">
+			</fileset>
+			</apply>
+	</target>
+	
+	<!-- 步骤 4. 将资源和清单打包. -->
+	<property name="resources-package" value="resources-package" />
+	<target name="package-res-and-assets">
+		<echo>Packaging resources and assets...</echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package"/>
+			<arg value="-f"/>
+			<arg value="-M"/>
+			<arg value="${tarPath}\AndroidManifest.xml"/>
+			<arg value="-S"/>
+			<arg value="${resource-dir}"/>
+			<arg value="-A"/>
+			<arg value="${assets-dir}"/>
+			<arg value="-I"/>
+			<arg value="${android-jar}"/>
+			<arg value="-F"/>
+			<arg value="${tarPath}/${resources-package}"/>
+		</exec>
+	</target>
+	
+	<!-- 生成未签名的apk安装文件 -->
+	<property name="apk-builder" value="${android-sdk-tools}/apkbuilder.bat"/>
+	<property name="intermediate-dex" value="${tarPath}/${dex-file}" />
+	<property name="src-dir" value="src" />
+    <property name="src-dir-ospath" value="${tarPath}/${src-dir}" />   
+   <target name="apk" depends="dex,package-res-and-assets"> 
+        <echo>生成未签名的apk安装文件</echo> 
+        <exec executable="${apk-builder}" failonerror="true"> 
+            <arg value="${unsigned.apk}" /> 
+            <arg value="-u" /> 
+            <arg value="-z" /> 
+            <arg value="${tarPath}\${resources-package}" /> 
+            <arg value="-f" /> 
+            <arg value="${intermediate-dex}" /> 
+            <arg value="-rf" /> 
+            <arg value="${src-dir-ospath}" /> 
+        </exec> 
+    </target> 
+	
+	<!-- 签名工具 -->
+	<property name="key" value="android"/>
+	<property name="keypass" value="5176090844"/>
+	<property name="keystore" value="H:/sunyh android software/android.key"/>
+	<property name="jdk-home" value="H:/Program Files/Java/jdk1.6.0_25"/>
+	<property name="jarsigner" value="${jdk-home}/bin/jarsigner.exe"/>
+	<target name="jarsigner" depends="apk">
+		<echo>对apk进行签名</echo>
+		<exec executable="${jarsigner}" failonerror="true">
+			<arg value="-verbose"/>
+			<arg value="-storepass"/>
+			<arg value="${keypass}"/>
+			<arg value="-keystore"/>
+			<arg value="${keystore}"/>
+			<arg value="-signedjar"/>
+			<arg value="${signed.apk}"/>
+			<arg value="${unsigned.apk}"/>
+			<arg value="${key}"/>
+		</exec>
+	</target>
+	<!-- zipalign优化android程序 -->
+	<!-- 优化APK工具 -->
+	<property name="zipalign" value="${android-sdk-tools}/zipalign.exe"/>
+	<target name="zipalign" depends="jarsigner">
+		<echo>zipalign 优化</echo>
+		<exec executable="${zipalign}" failonerror="true">
+			<arg value="-v"/>
+			<arg value="-f"/>
+			<arg value="4"/>
+			<arg value="${signed.apk}"/>
+			<arg value="${release.apk}"/>
+		</exec>
+	</target>
+	
+	<target name="out" depends="zipalign">
+		<echo>统一输出到一个目录</echo>
+		<copy overwrite="true" toDir="${out.path}" verbose="true">
+			<fileset dir="${tarPath.bin}">
+				<include name="*release*.apk" />
+			</fileset>
+		</copy>
+	</target>
+	<!-- 步骤    
+    1.用aapt生成R.java  eclipse已经做了
+	2.JAVAC编译JAVA文件  eclipse已经做了 
+	3.批处理生成classes.dex  eclipse已经做了
+	4.aapt打包资源   eclipse已经做了
+	5.apkbuilder包资源和类文件为APK文件
+	6.jarsinger 对APK进行签名
+    -->
+</project>

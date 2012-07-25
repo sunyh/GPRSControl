@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/lable_dayGPRSMax"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dayGPRSMax" />
+
+    <EditText
+        android:id="@+id/dayGPRSMAX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lable_dayGPRSMax"
+        android:hint="@string/unit"
+        android:numeric="integer" />
+
+    <TextView
+        android:id="@+id/lable_dayWifiMAX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dayGPRSMAX"
+        android:text="@string/dayWifiMax" />
+
+    <EditText
+        android:id="@+id/dayWifiMax"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lable_dayWifiMAX"
+        android:hint="@string/unit"
+        android:numeric="integer" />
+
+    <TextView
+        android:id="@+id/lable_monthGPRSMax"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dayWifiMax"
+        android:text="@string/monthGPRSMax" />
+
+    <EditText
+        android:id="@+id/monthGPRSMAX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lable_monthGPRSMax"
+        android:hint="@string/unit"
+        android:numeric="integer" />
+
+    <TextView
+        android:id="@+id/lable_monthWifiMAX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monthGPRSMAX"
+        android:text="@string/monthWifiMax" />
+
+    <EditText
+        android:id="@+id/monthWifiMax"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lable_monthWifiMAX"
+        android:hint="@string/unit"
+        android:numeric="integer" />
+    <CheckBox 
+        android:id="@+id/checkbox1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monthWifiMax"
+        android:checked="false"
+        android:text="@string/checkbox"
+        />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/checkbox1"
+        android:layout_marginLeft="10dip"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ok"
+        android:layout_toLeftOf="@id/ok"
+        android:text="取消" />
+    <LinearLayout
+        android:id="@+id/adViewLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ok" 
+     >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" basedir="." name="gprs">
+	<property name="version" value="1.1"/>
+	<property name="projectPath" value="H:/work/eclipse-SDK-3.7-win32/eclipse/workspace/${ant.project.name}"/>
+	<property name="out.path" value="H:/apache-ant-1.8.4/bin/${ant.project.name}-realse-${version}"/>
+	
+	<property file="build.properties"/>
+	<target name="run">
+		<echo message="正在编译 ${ant.project.name}"/>
+		<delete dir="${out.path}"/>
+		<mkdir dir="${out.path}"/>
+		<ant antfile="${file1}" dir="." output="${file1}.log" target="out"/>
+		<ant antfile="${file1.1}" dir="." output="${file1.1}.log" target="out"/>
+		<ant antfile="${file2}" dir="." output="${file2}.log" target="out"/>
+		<ant antfile="${file3}" dir="." output="${file3}.log" target="out"/>
+		<ant antfile="${file4}" dir="." output="${file4}.log" target="out"/>
+		<ant antfile="${file5}" dir="." output="${file5}.log" target="out"/>
+		<ant antfile="${file7}" dir="." output="${file7}.log" target="out"/>
+		<ant antfile="${file11}" dir="." output="${file11}.log" target="out"/>
+		<ant antfile="${file12}" dir="." output="${file12}.log" target="out"/>
+		<ant antfile="${file19}" dir="." output="${file19}.log" target="out"/>
+		<ant antfile="${file37}" dir="." output="${file37}.log" target="out"/>
+		<ant antfile="${file50}" dir="." output="${file50}.log" target="out"/>
+		<ant antfile="${file51}" dir="." output="${file51}.log" target="out"/>
+		<ant antfile="${file52}" dir="." output="${file52}.log" target="out"/>
+	</target>
+</project>
