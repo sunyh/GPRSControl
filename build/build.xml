@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="run" basedir="." name="gprs">
-	<property name="version" value="1.2.1"/>
+	<property name="version" value="1.1"/>
 	<property name="projectPath" value="H:/work/eclipse-SDK-3.7-win32/eclipse/workspace/${ant.project.name}"/>
 	<property name="out.path" value="H:/apache-ant-1.8.4/bin/${ant.project.name}-realse-${version}"/>
 	

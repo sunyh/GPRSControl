@@ -64,6 +64,8 @@ public class DayM {
 	}
 	
 	public void subtract(DayM d) {
+		if (d == null)
+			return;
 		this.gprs -= d.gprs;
 		this.total -= d.total;
 	}

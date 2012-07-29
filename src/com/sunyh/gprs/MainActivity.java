@@ -17,6 +17,7 @@ import net.youmi.android.AdManager;
 import net.youmi.android.AdView;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Service;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -218,17 +219,19 @@ public class MainActivity extends Activity {
 //			yesDayM = new DayM(curDate, getGRPS(), getTotal());
 //		}
 		// 进入新的一天，记录凌晨的流量
-//		if (!curDate.equals(yesDayM.getDay())) {
-//			yesDayM = new DayM(curDate, getGRPS(), getTotal());
-//		}
+		if (day != null && !curDate.equals(day.getDay())) {
+			yesDayM = new DayM(curDate, getGRPS(), getTotal());
+		}
 
 		day = new DayM(curDate, getGRPS(), getTotal());
-//		day.subtract(yesDayM);
+		day.subtract(yesDayM);
 		try {
 			saveToSdCard();
 		} catch (Exception e) {
 			if (ctx instanceof Activity)
-			MessageUtil.showErr4Activity((Activity) ctx, "getM", e);
+				MessageUtil.showErr4Activity((Activity) ctx, "saveToSdCard", e);
+			else
+				MessageUtil.showInfo4Service((Service) ctx, "saveToSdCard", e);
 		}
 	}
 
@@ -237,11 +240,11 @@ public class MainActivity extends Activity {
 	/**
 	 * 今天凌晨的流量，今天产生的流量需要减去此值
 	 */
-//	static DayM yesDayM;
+	static DayM yesDayM;
 	/**
 	 * 记录产生今天的流量
 	 */
-	static DayM day = new DayM();
+	static DayM day;
 	static DayM month = new DayM();
 
 	/**

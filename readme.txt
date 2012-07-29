@@ -9,6 +9,8 @@ http://my.oschina.net/sunyh/blog
 不再被垃圾，吸费软件而烦恼，我们开源，保证无后台偷流量！
 一款开源的GPRS流量监控软件，既可应用也可以用于学习!
 可以用于2.2及以上的系统。
+代码共享地址,您需要就可以forked他
+https://github.com/sunyh/GPRSControl
 后期整理好代码共享，如果现在有需要的童鞋可以直接联系我。
 联系方式：QQ 229006881 Tel:13816856365
 

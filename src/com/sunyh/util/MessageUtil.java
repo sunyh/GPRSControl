@@ -43,6 +43,11 @@ public class MessageUtil {
 	}
 
 	public static void showInfo4Service(Service ctx, CharSequence contentTitle,
+			Throwable e) {
+		showInfo4Service(ctx,contentTitle,e.toString());
+		
+	}
+	public static void showInfo4Service(Service ctx, CharSequence contentTitle,
 			CharSequence contentText) {
 		NotificationManager mNotificationManager = (NotificationManager) ctx
 				.getSystemService(Context.NOTIFICATION_SERVICE);
