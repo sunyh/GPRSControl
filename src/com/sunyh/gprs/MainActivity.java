@@ -34,7 +34,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 
 import com.gfan.sdk.statitistics.GFAgent;
 import com.sunyh.util.MessageUtil;
@@ -48,22 +47,29 @@ public class MainActivity extends Activity {
 	private final static String STRING_SIZE = "size";
 
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setTitle("提示");
-		builder.setMessage("您确定要退出GPRS监控吗？");
-		builder.setPositiveButton("退出", new DialogInterface.OnClickListener() {
+		if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			builder.setTitle("提示");
+			builder.setMessage("您确定要退出GPRS监控吗？");
+			builder.setPositiveButton("退出",
+					new DialogInterface.OnClickListener() {
 
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				// 退出程序
-				Intent exitIntent = new Intent(Intent.ACTION_MAIN);
-				exitIntent.addCategory(Intent.CATEGORY_HOME);
-				startActivity(exitIntent);
-				MainActivity.this.onDestroy();
-			}
-		});
-		builder.setNegativeButton("取消", null);
-		builder.show();
+						@Override
+						public void onClick(DialogInterface dialog, int which) {
+							// 退出程序
+							Intent exitIntent = new Intent(Intent.ACTION_MAIN);
+							exitIntent.addCategory(Intent.CATEGORY_HOME);
+							startActivity(exitIntent);
+							MainActivity.this.onDestroy();
+						}
+					});
+			builder.setNegativeButton("取消", null);
+			builder.show();
+		}else if (event.getKeyCode() == KeyEvent.KEYCODE_MENU){
+			Intent intent = new Intent(MainActivity.this,
+					SettingActivity.class);
+			startActivity(intent);
+		}
 		return true;
 	}
 
@@ -152,7 +158,7 @@ public class MainActivity extends Activity {
 		}
 
 		int[] tt = { R.id.des, R.id.size };
-		ListAdapter adapter = new SimpleAdapter(this, list, R.layout.list,
+		ListAdapter adapter = new MySimpleAdapter(this, list, R.layout.list,
 				new String[] { STRING_DES, STRING_SIZE }, tt);
 		return adapter;
 	}

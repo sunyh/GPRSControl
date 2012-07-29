@@ -75,6 +75,6 @@ public class MessageUtil {
 				contentIntent);
 
 		// 发送通知
-		mNotificationManager.notify(R.id.text, notification);
+		mNotificationManager.notify(R.id.textMessage, notification);
 	}
 }

@@ -4,7 +4,8 @@
     android:layout_height="fill_parent"
     android:background="@android:color/darker_gray"
     android:orientation="horizontal" >
-    <TextView
+
+    <TextView
         android:id="@+id/des"
         android:layout_width="80dp"
         android:layout_height="30dp"

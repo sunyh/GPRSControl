@@ -21,24 +21,23 @@ public final class R {
     }
     public static final class id {
         public static final int adViewLayout1=0x7f080003;
-        public static final int adViewLayout2=0x7f080004;
-        public static final int adViewLayout3=0x7f080010;
-        public static final int cancel=0x7f08000f;
-        public static final int checkbox1=0x7f08000d;
-        public static final int dayGPRSMAX=0x7f080006;
-        public static final int dayWifiMax=0x7f080008;
+        public static final int adViewLayout3=0x7f08000f;
+        public static final int cancel=0x7f08000e;
+        public static final int checkbox1=0x7f08000c;
+        public static final int dayGPRSMAX=0x7f080005;
+        public static final int dayWifiMax=0x7f080007;
         public static final int des=0x7f080000;
-        public static final int lable_dayGPRSMax=0x7f080005;
-        public static final int lable_dayWifiMAX=0x7f080007;
-        public static final int lable_monthGPRSMax=0x7f080009;
-        public static final int lable_monthWifiMAX=0x7f08000b;
+        public static final int lable_dayGPRSMax=0x7f080004;
+        public static final int lable_dayWifiMAX=0x7f080006;
+        public static final int lable_monthGPRSMax=0x7f080008;
+        public static final int lable_monthWifiMAX=0x7f08000a;
         public static final int listView=0x7f080002;
-        public static final int menu_settings=0x7f080012;
-        public static final int monthGPRSMAX=0x7f08000a;
-        public static final int monthWifiMax=0x7f08000c;
-        public static final int ok=0x7f08000e;
+        public static final int menu_settings=0x7f080011;
+        public static final int monthGPRSMAX=0x7f080009;
+        public static final int monthWifiMax=0x7f08000b;
+        public static final int ok=0x7f08000d;
         public static final int size=0x7f080001;
-        public static final int text=0x7f080011;
+        public static final int textMessage=0x7f080010;
     }
     public static final class layout {
         public static final int list=0x7f030000;
