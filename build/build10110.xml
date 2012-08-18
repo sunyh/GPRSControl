@@ -28,7 +28,8 @@
 	<target name="copyFile" depends="create">
 		<echo>从 ${projectPath}拷贝文件到</echo>
 		<copy overwrite="true" toDir="${tarPath}" verbose="true">
-			<fileset dir="${projectPath}">
+			<fileset dir="${projectPath}">		
+              <exclude name="其他/" />
 			</fileset>
 		</copy>
 		<replace encoding="utf-8" file="${tarPath}/AndroidManifest.xml" token="-1" value="10110"/>
@@ -69,7 +70,7 @@
 	<!-- 步骤 2. 编译所有class文件. -->
 	<target name="compile" depends="resource-src">
 		<echo>java 编译为class文件</echo>
-		<javac encoding="utf-8" bootclasspath="${android-jar}" classpath="${tarPath.libs}/youmi-android_v3.07_2012-05-04.jar;${tarPath.libs}/gfansdk_statistics.jar" debug="true" destdir="${outdir-classes}" extdirs="" includeantruntime="on" srcdir="${tarPath}" target="1.6"/>
+		<javac encoding="utf-8" bootclasspath="${android-jar}" classpath="${tarPath.libs}/youmi-android_v3.07_2012-05-04.jar;${tarPath.libs}/gfansdk_statistics.jar;${tarPath.libs}/kuguopush-1.1.2.jar" debug="true" destdir="${outdir-classes}" extdirs="" includeantruntime="on" srcdir="${tarPath}" target="1.6"/>
 	</target>
 	<!-- 步骤 3. 转换class文件为dex文件. -->
 	<property name="dx" value="${android-sdk-platform-tools}/dx.bat"/>
@@ -126,12 +127,6 @@
         </exec> 
     </target> 
 	
-	<!-- 签名工具 -->
-	<property name="key" value="android"/>
-	<property name="keypass" value="5176090844"/>
-	<property name="keystore" value="H:/sunyh android software/android.key"/>
-	<property name="jdk-home" value="H:/Program Files/Java/jdk1.6.0_25"/>
-	<property name="jarsigner" value="${jdk-home}/bin/jarsigner.exe"/>
 	<target name="jarsigner" depends="apk">
 		<echo>对apk进行签名</echo>
 		<exec executable="${jarsigner}" failonerror="true">

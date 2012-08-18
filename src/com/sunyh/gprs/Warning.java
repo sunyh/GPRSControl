@@ -32,10 +32,10 @@ public class Warning {
 
 	public static List<Warning> initWarning() {
 		List<Warning> warns = new ArrayList<Warning>(4);
-		warns.add(new Warning(null, 1, false, false, s1,2));
-		warns.add(new Warning(null, 2, false, false, s2,1));
-		warns.add(new Warning(null, 3, false, false, s3,2));
-		warns.add(new Warning(null, 4, false, false, s4,1));
+		warns.add(new Warning(null, 1, false, false, s1, 2));
+		warns.add(new Warning(null, 2, false, false, s2, 1));
+		warns.add(new Warning(null, 3, false, false, s3, 2));
+		warns.add(new Warning(null, 4, false, false, s4, 1));
 		return warns;
 	}
 
@@ -48,7 +48,7 @@ public class Warning {
 	 * 警告类型(当日gprs,当日wifi,当月gprs,当月wifi)
 	 */
 	int type;
-	
+
 	/**
 	 * 网络类型 1-wifi 2-gprs，3-other
 	 */
@@ -114,7 +114,7 @@ public class Warning {
 	}
 
 	public Warning(Date date, int type, boolean needWarn, boolean b,
-			String warnInfo,int netType) {
+			String warnInfo, int netType) {
 		this.date = date;
 		this.type = type;
 		this.needWarn = needWarn;
@@ -125,7 +125,8 @@ public class Warning {
 
 	public String toString() {
 		return "b " + this.b + " date " + this.date + " type " + this.type
-				+ " needWarn " + this.needWarn + " warnInfo " + this.warnInfo+ " netType " + this.netType;
+				+ " needWarn " + this.needWarn + " warnInfo " + this.warnInfo
+				+ " netType " + this.netType;
 	}
 
 	private static double convert(String s) {
@@ -135,26 +136,22 @@ public class Warning {
 		return Double.valueOf(s);
 	}
 
-	static void checkData(List<Warning> warns) {
+	static void checkData(MyApp app, List<Warning> warns) {
 
 		Status.getInstance().setbNeedVib(false);
-		if (MainActivity.day.getGPRS() >= convert(PropertiesUtil.prop
-				.getProperty("dayGPRSMax"))) {
+		if (app.day.getGPRS() >= convert(app.getProp("dayGPRSMax"))) {
 			Status.getInstance().setbNeedVib(true);
 			warns.get(0).setNeedWarn(true);
 		}
-		if (MainActivity.day.getWifi() >= convert(PropertiesUtil.prop
-				.getProperty("dayWifiMax"))) {
+		if (app.day.getWifi() >= convert(app.getProp("dayWifiMax"))) {
 			Status.getInstance().setbNeedVib(true);
 			warns.get(1).setNeedWarn(true);
 		}
-		if (MainActivity.month.getGPRS() >= convert(PropertiesUtil.prop
-				.getProperty("monthGPRSMax"))) {
+		if (app.month.getGPRS() >= convert(app.getProp("monthGPRSMax"))) {
 			Status.getInstance().setbNeedVib(true);
 			warns.get(2).setNeedWarn(true);
 		}
-		if (MainActivity.month.getWifi() >= convert(PropertiesUtil.prop
-				.getProperty("monthWifiMax"))) {
+		if (app.month.getWifi() >= convert(app.getProp("monthWifiMax"))) {
 			Status.getInstance().setbNeedVib(true);
 			warns.get(3).setNeedWarn(true);
 		}

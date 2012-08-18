@@ -16,9 +16,17 @@ public class DayM {
 	public void setDay(String day) {
 		this.day = day;
 	}
-
+	
+	public void addGPRS(double gprs) {
+		this.gprs += gprs;
+	}
+	
+	public void addTotal(double total) {
+		this.total += total;
+	}
+	
 	public DayM(String day, double gprs, double total) {
-		this(day);
+		this.day = day;
 		this.gprs = gprs;
 		this.total = total;
 	}
@@ -69,6 +77,11 @@ public class DayM {
 		this.gprs -= d.gprs;
 		this.total -= d.total;
 	}
+	
+	public void clear() {
+		this.gprs = 0;
+		this.total = 0;
+	}
 
 	public String getSaveFileName() {
 		return day + ".log";
@@ -76,6 +89,10 @@ public class DayM {
 
 	public String getSaveStr() {
 		return convert(gprs) + " " + convert(total);
+	}
+
+	public DayM clone() {
+		return new DayM(day, gprs, total);
 	}
 
 	public String toString() {

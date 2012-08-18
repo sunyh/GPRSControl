@@ -1,6 +1,6 @@
 
 delete:
-     [echo] building project... °æ±¾Îª 1.3
+     [echo] building project... °æ±¾Îª 1.4
      [echo] ÏÈÉ¾³ýÀúÊ·ÎÄ¼þ
    [delete] Deleting directory H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø
 
@@ -8,104 +8,159 @@ create:
     [mkdir] Created dir: H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø
 
 copyFile:
-     [echo] ´Ó H:/work/eclipse-SDK-3.7-win32/eclipse/workspace/gprs¿½±´ÎÄ¼þµ½
-     [copy] Copying 95 files to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\.classpath to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\.classpath
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\.project to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\.project
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\.settings\org.eclipse.core.resources.prefs to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\.settings\org.eclipse.core.resources.prefs
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\AndroidManifest.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\AndroidManifest.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\Desktop.ini to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\Desktop.ini
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\AndroidManifest.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\AndroidManifest.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes.dex to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes.dex
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\BuildConfig.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\BuildConfig.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\DayM.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\DayM.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\GPRSBroadcastReceiver.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\GPRSBroadcastReceiver.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\GPRSService$1.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\GPRSService$1.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\GPRSService.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\GPRSService.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MainActivity$1.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\MainActivity$1.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MainActivity$2.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\MainActivity$2.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MainActivity.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\MainActivity.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MySimpleAdapter$SimpleFilter.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\MySimpleAdapter$SimpleFilter.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MySimpleAdapter$ViewBinder.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\MySimpleAdapter$ViewBinder.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MySimpleAdapter.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\MySimpleAdapter.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\NetworkUtil.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\NetworkUtil.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\PropertiesUtil.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\PropertiesUtil.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$attr.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$attr.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$dimen.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$dimen.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$drawable.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$drawable.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$id.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$id.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$layout.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$layout.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$menu.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$menu.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$string.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$string.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$style.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$style.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\SettingActivity$1.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\SettingActivity$1.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\SettingActivity$2.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\SettingActivity$2.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\SettingActivity.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\SettingActivity.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\Status.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\Status.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\Version.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\Version.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\Warning.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\Warning.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\util\MessageUtil$1.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\util\MessageUtil$1.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\util\MessageUtil.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\util\MessageUtil.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\gprs.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\gprs.apk
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\jarlist.cache to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\jarlist.cache
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\res\drawable-hdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\res\drawable-hdpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\res\drawable-hdpi\icon.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\res\drawable-hdpi\icon.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\res\drawable-ldpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\res\drawable-ldpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\res\drawable-mdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\res\drawable-mdpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\resources.ap_ to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\resources.ap_
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build.properties to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build.properties
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build0.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build0.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build0.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build0.xml.log
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10010.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10010.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10020.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10020.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10030.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10030.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10040.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10040.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10050.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10050.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10070.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10070.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10110.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10110.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10120.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10120.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10190.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10190.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10370.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10370.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10550.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10550.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10551.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10551.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10552.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10552.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\gen\com\sunyh\gprs\BuildConfig.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gen\com\sunyh\gprs\BuildConfig.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\gen\com\sunyh\gprs\R.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gen\com\sunyh\gprs\R.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\libs\android-support-v4.jar to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\libs\android-support-v4.jar
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\libs\gfansdk_statistics.jar to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\libs\gfansdk_statistics.jar
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\libs\youmi-android_v3.07_2012-05-04.jar to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\libs\youmi-android_v3.07_2012-05-04.jar
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\proguard-project.txt to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\proguard-project.txt
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\project.properties to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\project.properties
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\readme.txt to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\readme.txt
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\drawable-hdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\drawable-hdpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\drawable-hdpi\icon.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\drawable-hdpi\icon.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\drawable-ldpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\drawable-ldpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\drawable-mdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\drawable-mdpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\layout\list.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\layout\list.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\layout\main.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\layout\main.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\layout\setting.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\layout\setting.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\layout\view.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\layout\view.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\menu\activity_main.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\menu\activity_main.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\values-large\dimens.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\values-large\dimens.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\values\dimens.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\values\dimens.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\values\strings.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\values\strings.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\values\styles.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\values\styles.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\DayM.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\DayM.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\GPRSBroadcastReceiver.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\GPRSBroadcastReceiver.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\GPRSService.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\GPRSService.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\MainActivity.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\MainActivity.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\MySimpleAdapter.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\MySimpleAdapter.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\NetworkUtil.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\NetworkUtil.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\PropertiesUtil.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\PropertiesUtil.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\SettingActivity.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\SettingActivity.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\Status.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\Status.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\Version.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\Version.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\Warning.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\Warning.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\util\MessageUtil.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\util\MessageUtil.java
-     [copy] Copied 34 empty directories to 3 empty directories under H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø
+     [echo] ´Ó H:/Android GPRS/gprs¿½±´ÎÄ¼þµ½
+     [copy] Copying 150 files to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø
+     [copy] Copying H:\Android GPRS\gprs\.classpath to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\.classpath
+     [copy] Copying H:\Android GPRS\gprs\.project to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\.project
+     [copy] Copying H:\Android GPRS\gprs\.settings\org.eclipse.core.resources.prefs to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\.settings\org.eclipse.core.resources.prefs
+     [copy] Copying H:\Android GPRS\gprs\AndroidManifest.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\AndroidManifest.xml
+     [copy] Copying H:\Android GPRS\gprs\android.key to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\android.key
+     [copy] Copying H:\Android GPRS\gprs\bin\AndroidManifest.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\AndroidManifest.xml
+     [copy] Copying H:\Android GPRS\gprs\bin\classes.dex to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes.dex
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\AD.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\AD.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\BuildConfig.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\BuildConfig.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\DBHelper.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\DBHelper.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\DayM.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\DayM.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\GPRSBroadcastReceiver.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\GPRSBroadcastReceiver.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\GPRSService$1.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\GPRSService$1.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\GPRSService.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\GPRSService.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\MainActivity$1.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\MainActivity$1.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\MainActivity.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\MainActivity.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\MyApp.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\MyApp.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\NetworkUtil.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\NetworkUtil.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\PropertiesUtil.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\PropertiesUtil.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$attr.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$attr.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$dimen.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$dimen.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$drawable.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$drawable.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$id.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$id.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$layout.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$layout.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$string.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$string.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$style.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R$style.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\R.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\SettingActivity$1.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\SettingActivity$1.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\SettingActivity$2.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\SettingActivity$2.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\SettingActivity.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\SettingActivity.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\Status.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\Status.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\Warning.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\gprs\Warning.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\util\MessageUtil$1.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\util\MessageUtil$1.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\util\MessageUtil.class to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes\com\sunyh\util\MessageUtil.class
+     [copy] Copying H:\Android GPRS\gprs\bin\com.sunyh.gprs.MainActivity.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\com.sunyh.gprs.MainActivity.apk
+     [copy] Copying H:\Android GPRS\gprs\bin\res\drawable-hdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\res\drawable-hdpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\bin\res\drawable-hdpi\icon.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\res\drawable-hdpi\icon.png
+     [copy] Copying H:\Android GPRS\gprs\bin\res\drawable-ldpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\res\drawable-ldpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\bin\res\drawable-mdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\res\drawable-mdpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\bin\resources.ap_ to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\resources.ap_
+     [copy] Copying H:\Android GPRS\gprs\build.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build.properties to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build.properties
+     [copy] Copying H:\Android GPRS\gprs\build\build.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build0.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build0.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build0.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build0.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10010.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10010.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10010.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10010.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10020.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10020.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10020.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10020.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10030.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10030.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10030.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10030.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10040.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10040.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10040.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10040.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10050.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10050.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10050.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10050.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10070.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10070.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10070.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10070.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10110.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10110.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10110.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10110.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10120.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10120.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10120.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10120.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10190.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10190.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10190.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10190.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10370.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10370.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10370.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10370.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10550.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10550.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10550.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10550.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10551.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10551.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10551.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10551.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10552.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10552.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10552.xml.log to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\build\build10552.xml.log
+     [copy] Copying H:\Android GPRS\gprs\gen\com\sunyh\gprs\BuildConfig.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gen\com\sunyh\gprs\BuildConfig.java
+     [copy] Copying H:\Android GPRS\gprs\gen\com\sunyh\gprs\R.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gen\com\sunyh\gprs\R.java
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-0-ÓÐÃ×-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-0-ÓÐÃ×-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10010-°²ÖÇÊÐ³¡-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10010-°²ÖÇÊÐ³¡-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10020-»ú·æ-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10020-»ú·æ-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10030-°²×¿ÊÐ³¡-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10030-°²×¿ÊÐ³¡-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10040-ÁªÏëÊÐ³¡-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10040-ÁªÏëÊÐ³¡-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10050-Ó¦ÓÃ»ã-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10050-Ó¦ÓÃ»ã-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10070-Ä¾ÂìÒÏÊÐ³¡-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10070-Ä¾ÂìÒÏÊÐ³¡-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10110-91ÊÖ»úÉÌµê-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10110-91ÊÖ»úÉÌµê-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10120-Ò×ÓÅÊÐ³¡-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10120-Ò×ÓÅÊÐ³¡-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10190-360Èí¼þÏÂÔØ-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10190-360Èí¼þÏÂÔØ-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10370-ËÑºü-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10370-ËÑºü-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10550-°Ù¶È-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10550-°Ù¶È-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10551-°®×¿Íø-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10551-°®×¿Íø-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10552-ÊÖ»úÖ®¼Ò-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\gprs-realse-1.3\gprs-10552-ÊÖ»úÖ®¼Ò-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\libs\android-support-v4.jar to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\libs\android-support-v4.jar
+     [copy] Copying H:\Android GPRS\gprs\libs\gfansdk_statistics.jar to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\libs\gfansdk_statistics.jar
+     [copy] Copying H:\Android GPRS\gprs\libs\kuguopush-1.1.2.jar to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\libs\kuguopush-1.1.2.jar
+     [copy] Copying H:\Android GPRS\gprs\libs\youmi-android_v3.07_2012-05-04.jar to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\libs\youmi-android_v3.07_2012-05-04.jar
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk °²×¿\ÎÞ±êÌâ.jpg to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\hiapk °²×¿\ÎÞ±êÌâ.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk °²×¿\ÎÞ±êÌâ.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\hiapk °²×¿\ÎÞ±êÌâ.png
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk °²×¿\ÎÞ±êÌâ1.jpg to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\hiapk °²×¿\ÎÞ±êÌâ1.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk °²×¿\ÎÞ±êÌâ1.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\hiapk °²×¿\ÎÞ±êÌâ1.png
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk °²×¿\ÎÞ±êÌâ2.jpg to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\hiapk °²×¿\ÎÞ±êÌâ2.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk °²×¿\ÎÞ±êÌâ2.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\hiapk °²×¿\ÎÞ±êÌâ2.png
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk °²×¿\ÎÞ±êÌâÌáÊ¾.jpg to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\hiapk °²×¿\ÎÞ±êÌâÌáÊ¾.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk °²×¿\ÎÞ±êÌâÌáÊ¾.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\hiapk °²×¿\ÎÞ±êÌâÌáÊ¾.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ic_launcher-web - ¸±±¾ (2).jpg to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ic_launcher-web - ¸±±¾ (2).jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\ic_launcher-web - ¸±±¾.jpg to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ic_launcher-web - ¸±±¾.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\ic_launcher-web.jpg to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ic_launcher-web.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\×¥Ã¨Íø½ØÍ¼\ÎÞ±êÌâ.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\×¥Ã¨Íø½ØÍ¼\ÎÞ±êÌâ.png
+     [copy] Copying H:\Android GPRS\gprs\pic\×¥Ã¨Íø½ØÍ¼\ÎÞ±êÌâ1.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\×¥Ã¨Íø½ØÍ¼\ÎÞ±êÌâ1.png
+     [copy] Copying H:\Android GPRS\gprs\pic\×¥Ã¨Íø½ØÍ¼\ÎÞ±êÌâ2.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\×¥Ã¨Íø½ØÍ¼\ÎÞ±êÌâ2.png
+     [copy] Copying H:\Android GPRS\gprs\pic\×¥Ã¨Íø½ØÍ¼\ÎÞ±êÌâÌáÊ¾.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\×¥Ã¨Íø½ØÍ¼\ÎÞ±êÌâÌáÊ¾.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÎÞ±êÌâ.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÎÞ±êÌâ.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÎÞ±êÌâ1.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÎÞ±êÌâ1.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÎÞ±êÌâ2.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÎÞ±êÌâ2.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÎÞ±êÌâ36 - ¸±±¾.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÎÞ±êÌâ36 - ¸±±¾.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÎÞ±êÌâ36.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÎÞ±êÌâ36.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÎÞ±êÌâ48.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÎÞ±êÌâ48.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÎÞ±êÌâ72.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÎÞ±êÌâ72.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÎÞ±êÌâÌáÊ¾.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÎÞ±êÌâÌáÊ¾.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÓÐÃ×Ó¦ÓÃ½ØÍ¼\ÎÞ±êÌâ.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÓÐÃ×Ó¦ÓÃ½ØÍ¼\ÎÞ±êÌâ.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÓÐÃ×Ó¦ÓÃ½ØÍ¼\ÎÞ±êÌâ1.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÓÐÃ×Ó¦ÓÃ½ØÍ¼\ÎÞ±êÌâ1.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÓÐÃ×Ó¦ÓÃ½ØÍ¼\ÎÞ±êÌâ2.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÓÐÃ×Ó¦ÓÃ½ØÍ¼\ÎÞ±êÌâ2.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ÓÐÃ×Ó¦ÓÃ½ØÍ¼\ÎÞ±êÌâÌáÊ¾.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\ÓÐÃ×Ó¦ÓÃ½ØÍ¼\ÎÞ±êÌâÌáÊ¾.png
+     [copy] Copying H:\Android GPRS\gprs\pic\°Ù¶ÈÓ¦ÓÃ½ØÍ¼\ÎÞ±êÌâ.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\°Ù¶ÈÓ¦ÓÃ½ØÍ¼\ÎÞ±êÌâ.png
+     [copy] Copying H:\Android GPRS\gprs\pic\°Ù¶ÈÓ¦ÓÃ½ØÍ¼\ÎÞ±êÌâ1.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\°Ù¶ÈÓ¦ÓÃ½ØÍ¼\ÎÞ±êÌâ1.png
+     [copy] Copying H:\Android GPRS\gprs\pic\°Ù¶ÈÓ¦ÓÃ½ØÍ¼\ÎÞ±êÌâ2.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\°Ù¶ÈÓ¦ÓÃ½ØÍ¼\ÎÞ±êÌâ2.png
+     [copy] Copying H:\Android GPRS\gprs\pic\°Ù¶ÈÓ¦ÓÃ½ØÍ¼\ÎÞ±êÌâÌáÊ¾.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\pic\°Ù¶ÈÓ¦ÓÃ½ØÍ¼\ÎÞ±êÌâÌáÊ¾.png
+     [copy] Copying H:\Android GPRS\gprs\proguard-project.txt to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\proguard-project.txt
+     [copy] Copying H:\Android GPRS\gprs\project.properties to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\project.properties
+     [copy] Copying H:\Android GPRS\gprs\readme.txt to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\readme.txt
+     [copy] Copying H:\Android GPRS\gprs\res\drawable-hdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\drawable-hdpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\res\drawable-hdpi\icon.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\drawable-hdpi\icon.png
+     [copy] Copying H:\Android GPRS\gprs\res\drawable-ldpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\drawable-ldpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\res\drawable-mdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\drawable-mdpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\res\layout\list.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\layout\list.xml
+     [copy] Copying H:\Android GPRS\gprs\res\layout\main.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\layout\main.xml
+     [copy] Copying H:\Android GPRS\gprs\res\layout\setting.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\layout\setting.xml
+     [copy] Copying H:\Android GPRS\gprs\res\layout\view.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\layout\view.xml
+     [copy] Copying H:\Android GPRS\gprs\res\values-large\dimens.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\values-large\dimens.xml
+     [copy] Copying H:\Android GPRS\gprs\res\values\dimens.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\values\dimens.xml
+     [copy] Copying H:\Android GPRS\gprs\res\values\strings.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\values\strings.xml
+     [copy] Copying H:\Android GPRS\gprs\res\values\styles.xml to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\res\values\styles.xml
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\AD.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\AD.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\DBHelper.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\DBHelper.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\DayM.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\DayM.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\GPRSBroadcastReceiver.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\GPRSBroadcastReceiver.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\GPRSService.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\GPRSService.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\MainActivity.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\MainActivity.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\MyApp.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\MyApp.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\NetworkUtil.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\NetworkUtil.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\PropertiesUtil.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\PropertiesUtil.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\SettingActivity.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\SettingActivity.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\Status.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\Status.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\Warning.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\Warning.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\util\MessageUtil.java to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\util\MessageUtil.java
+     [copy] Copied 40 empty directories to 4 empty directories under H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø
 
 init:
      [echo] Creating all output directories 
@@ -119,9 +174,7 @@ resource-src:
 
 compile:
      [echo] java ±àÒëÎªclassÎÄ¼þ
-    [javac] Compiling 13 source files to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes
-    [javac] ×¢Òâ£ºH:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\src\com\sunyh\gprs\MySimpleAdapter.java Ê¹ÓÃÁËÎ´¾­¼ì²é»ò²»°²È«µÄ²Ù×÷¡£
-    [javac] ×¢Òâ£ºÒªÁË½âÏêÏ¸ÐÅÏ¢£¬ÇëÊ¹ÓÃ -Xlint:unchecked ÖØÐÂ±àÒë¡£
+    [javac] Compiling 14 source files to H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\classes
 
 dex:
      [echo] ×ª»»classÎÄ¼þÎªdexÎÄ¼þ
@@ -144,7 +197,6 @@ jarsigner:
      [exec]   ÕýÔÚÇ©Ãû£º res/layout/main.xml
      [exec]   ÕýÔÚÇ©Ãû£º res/layout/setting.xml
      [exec]   ÕýÔÚÇ©Ãû£º res/layout/view.xml
-     [exec]   ÕýÔÚÇ©Ãû£º res/menu/activity_main.xml
      [exec]   ÕýÔÚÇ©Ãû£º AndroidManifest.xml
      [exec]   ÕýÔÚÇ©Ãû£º resources.arsc
      [exec]   ÕýÔÚÇ©Ãû£º res/drawable-hdpi/ic_launcher.png
@@ -155,25 +207,24 @@ jarsigner:
 
 zipalign:
      [echo] zipalign ÓÅ»¯
-     [exec] Verifying alignment of H:/apache-ant-1.8.4/bin/gprs-10551-°®×¿Íø/bin/gprs-10551-°®×¿Íø-release-1.3.apk (4)...
+     [exec] Verifying alignment of H:/apache-ant-1.8.4/bin/gprs-10551-°®×¿Íø/bin/gprs-10551-°®×¿Íø-release-1.4.apk (4)...
      [exec]       50 META-INF/MANIFEST.MF (OK - compressed)
-     [exec]      616 META-INF/ANDROID.SF (OK - compressed)
-     [exec]     1250 META-INF/ANDROID.RSA (OK - compressed)
-     [exec]     1948 res/layout/list.xml (OK - compressed)
-     [exec]     2360 res/layout/main.xml (OK - compressed)
-     [exec]     2730 res/layout/setting.xml (OK - compressed)
-     [exec]     3508 res/layout/view.xml (OK - compressed)
-     [exec]     3843 res/menu/activity_main.xml (OK - compressed)
-     [exec]     4136 AndroidManifest.xml (OK - compressed)
-     [exec]     5704 resources.arsc (OK)
-     [exec]     9196 res/drawable-hdpi/ic_launcher.png (OK)
-     [exec]    37580 res/drawable-hdpi/icon.png (OK)
-     [exec]    38588 res/drawable-ldpi/ic_launcher.png (OK)
-     [exec]    40204 res/drawable-mdpi/ic_launcher.png (OK)
-     [exec]    49151 classes.dex (OK - compressed)
+     [exec]      581 META-INF/ANDROID.SF (OK - compressed)
+     [exec]     1180 META-INF/ANDROID.RSA (OK - compressed)
+     [exec]     1879 res/layout/list.xml (OK - compressed)
+     [exec]     2291 res/layout/main.xml (OK - compressed)
+     [exec]     2661 res/layout/setting.xml (OK - compressed)
+     [exec]     3439 res/layout/view.xml (OK - compressed)
+     [exec]     3767 AndroidManifest.xml (OK - compressed)
+     [exec]     5832 resources.arsc (OK)
+     [exec]     9140 res/drawable-hdpi/ic_launcher.png (OK)
+     [exec]    37524 res/drawable-hdpi/icon.png (OK)
+     [exec]    38532 res/drawable-ldpi/ic_launcher.png (OK)
+     [exec]    40148 res/drawable-mdpi/ic_launcher.png (OK)
+     [exec]    49095 classes.dex (OK - compressed)
      [exec] Verification succesful
 
 out:
      [echo] Í³Ò»Êä³öµ½Ò»¸öÄ¿Â¼
-     [copy] Copying 1 file to H:\apache-ant-1.8.4\bin\gprs-realse-1.3
-     [copy] Copying H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\gprs-10551-°®×¿Íø-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-realse-1.3\gprs-10551-°®×¿Íø-release-1.3.apk
+     [copy] Copying 1 file to H:\apache-ant-1.8.4\bin\gprs-realse-1.4
+     [copy] Copying H:\apache-ant-1.8.4\bin\gprs-10551-°®×¿Íø\bin\gprs-10551-°®×¿Íø-release-1.4.apk to H:\apache-ant-1.8.4\bin\gprs-realse-1.4\gprs-10551-°®×¿Íø-release-1.4.apk

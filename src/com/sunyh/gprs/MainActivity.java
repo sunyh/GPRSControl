@@ -6,12 +6,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.text.SimpleDateFormat;
+import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
 
 import net.youmi.android.AdManager;
 import net.youmi.android.AdView;
@@ -24,27 +22,19 @@ import android.content.Intent;
 import android.net.TrafficStats;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.Log;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.View;
 import android.view.ViewGroup.LayoutParams;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 import com.gfan.sdk.statitistics.GFAgent;
+import com.kuguo.ad.KuguoAdsManager;
 import com.sunyh.util.MessageUtil;
 
 public class MainActivity extends Activity {
-	final static DayM zero = new DayM();
-	public final static SimpleDateFormat format = new SimpleDateFormat(
-			"yyyy-MM-dd", Locale.CHINESE);
-	private final static String STRING_EMPTY = "";
-	private final static String STRING_DES = "des";
-	private final static String STRING_SIZE = "size";
 
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
@@ -57,17 +47,16 @@ public class MainActivity extends Activity {
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							// 退出程序
-							Intent exitIntent = new Intent(Intent.ACTION_MAIN);
-							exitIntent.addCategory(Intent.CATEGORY_HOME);
-							startActivity(exitIntent);
+							Intent exit = new Intent(Intent.ACTION_MAIN);
+							exit.addCategory(Intent.CATEGORY_HOME);
+							startActivity(exit);
 							MainActivity.this.onDestroy();
 						}
 					});
 			builder.setNegativeButton("取消", null);
 			builder.show();
-		}else if (event.getKeyCode() == KeyEvent.KEYCODE_MENU){
-			Intent intent = new Intent(MainActivity.this,
-					SettingActivity.class);
+		} else if (event.getKeyCode() == KeyEvent.KEYCODE_MENU) {
+			Intent intent = new Intent(MainActivity.this.getApplicationContext(), SettingActivity.class);
 			startActivity(intent);
 		}
 		return true;
@@ -75,28 +64,44 @@ public class MainActivity extends Activity {
 
 	protected void onPause() {
 		super.onPause();
+		try {
+			this.unregisterReceiver(new GPRSBroadcastReceiver());
+			WindowManager localWindowManager = (WindowManager)this.getApplicationContext().getSystemService("window");
+			localWindowManager.removeViewImmediate(getCurrentFocus());
+		} catch (Exception e) {
 
-		if (Version.GF)
+		}
+		if (AD.GF)
 			GFAgent.onPause(this);
 	}
-
+	
 	protected void onResume() {
 		super.onResume();
-
-		if (Version.GF)
+		MyApp app = (MyApp) getApplication();
+		if (AD.KUGUO) {
+			KuguoAdsManager.getInstance().receivePushMessage(app, true);
+			if (AD.KUGUO_Zai) 
+			/**
+			 * 加入精品推荐的酷仔，传入0表示显示酷仔
+			 */
+			KuguoAdsManager.getInstance().showKuguoSprite(app,
+					KuguoAdsManager.STYLE_KUZAI);
+		}
+			
+		if (AD.GF)
 			GFAgent.onResume(this);
 
-		saveM(this);
+		
+		saveM(app);
 
 		ListView listView = (ListView) findViewById(R.id.listView);
 		try {
 			listView.setAdapter(getListAdapter());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
-
-		Warning.checkData(Warning.warns1);
+		
+		Warning.checkData(app, Warning.warns1);
 		if (Status.getInstance().isbNeedVib()) {
 			String tmp = "";
 			for (Warning warn : Warning.warns1) {
@@ -110,41 +115,36 @@ public class MainActivity extends Activity {
 	}
 
 	private ListAdapter getListAdapter() throws IOException {
-		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		MyApp app = (MyApp) getApplication();
+		ArrayList<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
 		HashMap<String, Object> map;
 		// 标题
 		map = new HashMap<String, Object>();
-		map.put(STRING_DES, "今天流量");// 应该要是今天累计,直接读文件里面的数据
-		map.put(STRING_SIZE, "单位/M");
+		map.put(MyApp.STRING_DES, "今天流量");// 应该要是今天累计,直接读文件里面的数据
+		map.put(MyApp.STRING_SIZE, "单位/M");
 		list.add(map);
 		//
 		String[] des = new String[] { "2G/3G", "wifi", "总计" };
 		for (int i = 0; i < des.length; i++) {
 			map = new HashMap<String, Object>();
-			map.put(STRING_DES, des[i]);
-			map.put(STRING_SIZE, day.getData(i));
+			map.put(MyApp.STRING_DES, des[i]);
+			map.put(MyApp.STRING_SIZE, app.day.getData(i));
 			list.add(map);
 		}
 
 		// 本月数据
 		map = new HashMap<String, Object>();
-		map.put(STRING_DES, "本月流量");
-		map.put(STRING_SIZE, STRING_EMPTY);
+		map.put(MyApp.STRING_DES, "本月流量");
+		map.put(MyApp.STRING_SIZE, MyApp.STRING_EMPTY);
 		list.add(map);
 
-		DayM data = getMM();
+		app.month = getMM();
 		for (int i = 0; i < des.length; i++) {
 			map = new HashMap<String, Object>();
-			map.put(STRING_DES, des[i]);
-			map.put(STRING_SIZE, data.getData(i));
+			map.put(MyApp.STRING_DES, des[i]);
+			map.put(MyApp.STRING_SIZE, app.month.getData(i));
 			list.add(map);
 		}
-
-		// 设置
-		map = new HashMap<String, Object>();
-		map.put(STRING_DES, "设置阀值");
-		map.put(STRING_SIZE, STRING_EMPTY);
-		list.add(map);
 
 		// 关于
 		des = new String[] { "联系我们", "QQ", "Email" };
@@ -152,14 +152,14 @@ public class MainActivity extends Activity {
 				"main_syh@yahoo.com.cn" };
 		for (int i = 0; i < des.length; i++) {
 			map = new HashMap<String, Object>();
-			map.put(STRING_DES, des[i]);
-			map.put(STRING_SIZE, info[i]);
+			map.put(MyApp.STRING_DES, des[i]);
+			map.put(MyApp.STRING_SIZE, info[i]);
 			list.add(map);
 		}
 
 		int[] tt = { R.id.des, R.id.size };
-		ListAdapter adapter = new MySimpleAdapter(this, list, R.layout.list,
-				new String[] { STRING_DES, STRING_SIZE }, tt);
+		ListAdapter adapter = new SimpleAdapter(this, list, R.layout.list,
+				new String[] { MyApp.STRING_DES, MyApp.STRING_SIZE }, tt);
 		return adapter;
 	}
 
@@ -169,36 +169,9 @@ public class MainActivity extends Activity {
 
 		Intent intent = new Intent(GPRSService.class.getName());
 		startService(intent);
-
-		ListView listView = (ListView) findViewById(R.id.listView);
-		listView.setOnItemClickListener(new OnItemClickListener() {
-
-			@Override
-			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-					long arg3) {
-				@SuppressWarnings("unchecked")
-				HashMap<String, Object> map = (HashMap<String, Object>) arg0
-						.getItemAtPosition(arg2);
-				if (map.get(STRING_DES).equals("设置阀值")) {
-
-					Intent intent = new Intent(MainActivity.this,
-							SettingActivity.class);
-					startActivity(intent);
-				}
-				Log.d(this.getClass().toString(), "3 " + new Date());
-			}
-		});
-
-		// ActivityManager am = (ActivityManager) this
-		// .getSystemService(Context.ACTIVITY_SERVICE);
-
-		// List<RunningServiceInfo> tmp= am.getRunningServices(100);
-		// for (RunningServiceInfo inf : tmp) {
-		// Log.e("RunningServiceInfo",inf.toString());
-		//
-		// }
+		
 		// 应用Id 应用密码 广告请求间隔(s) 测试模式
-		if (Version.youmi) {
+		if (AD.youmi) {
 			AdManager.init(this, "198762f972d578e2", "119ca3646511d528", 30,
 					false);
 			LinearLayout adViewLayout = (LinearLayout) findViewById(R.id.adViewLayout1);
@@ -208,11 +181,6 @@ public class MainActivity extends Activity {
 		}
 	}
 
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_main, menu);
-		return true;
-	}
-
 	/**
 	 * 把现在的数据然后加上已经存在的数据
 	 * 
@@ -220,20 +188,48 @@ public class MainActivity extends Activity {
 	 * @throws Exception
 	 */
 	static void saveM(Context ctx) {
-		String curDate = format.format(new Date());
-//		if (yesDayM == null) {// 第一次进入需要记录已经产生的流量，这个值不会被记录,因为不知道是多少时间产生的流量(开机的时候)
-//			yesDayM = new DayM(curDate, getGRPS(), getTotal());
-//		}
+		MyApp app = (MyApp) ctx.getApplicationContext();
+		String curDate = MyApp.format.format(new Date());
 		// 进入新的一天，记录凌晨的流量
-		if (day != null && !curDate.equals(day.getDay())) {
-			yesDayM = new DayM(curDate, getGRPS(), getTotal());
+		if (!curDate.equals(app.day.getDay())) {
+			app.yesDayM = app.day.clone();
+			app.day.clear();
+			app.day.setDay(curDate);
+		}
+		double t1 = getGRPS();
+		double t2 = getTotal();
+		if ((app.gprs > 0 && t1 == 0) || (app.total > 0 && t2 == 0)) {// 为啥流量数据会清零？，不明原因
+			if (AD.debug)
+				if (ctx instanceof Activity)
+				MessageUtil.showErr4Activity((Activity) ctx, "saveToSdCard",
+						"流量变为0了");
+				else
+				MessageUtil.showInfo4Service((Service) ctx, "saveToSdCard",
+						"流量变为0了");
+		}
+		if (t1 == 0) {// 清除为0了。
+
+		} else if (app.gprs >= t1) {// 变小了
+
+		} else {// 正常情况
+			app.day.addGPRS(t1 - app.gprs);
 		}
 
-		day = new DayM(curDate, getGRPS(), getTotal());
-		day.subtract(yesDayM);
+		if (t2 == 0) {// 清除为0了。
+
+		} else if (app.total >= t2) {// 变小了
+
+		} else {// 正常情况
+			app.day.addTotal(t2 - app.total);
+		}
+
+		app.gprs = t1;
+		app.total = t2;		
+		
 		try {
-			saveToSdCard();
+			saveToSdCard(app);
 		} catch (Exception e) {
+			if (AD.debug)
 			if (ctx instanceof Activity)
 				MessageUtil.showErr4Activity((Activity) ctx, "saveToSdCard", e);
 			else
@@ -241,42 +237,27 @@ public class MainActivity extends Activity {
 		}
 	}
 
-	static long last;
-
-	/**
-	 * 今天凌晨的流量，今天产生的流量需要减去此值
-	 */
-	static DayM yesDayM;
-	/**
-	 * 记录产生今天的流量
-	 */
-	static DayM day;
-	static DayM month = new DayM();
-
 	/**
 	 * 保存当天的流量数据
 	 * 
 	 * @throws Exception
 	 */
-	private static void saveToSdCard() throws Exception {
-		if (System.currentTimeMillis() - last < 10)// 最多10秒写一次
+	private static void saveToSdCard(MyApp app) throws Exception {
+		if (System.currentTimeMillis() - app.last < 10)// 最多10秒写一次
 			return;
-		last = System.currentTimeMillis();
+		app.last = System.currentTimeMillis();
 		// 得到手机默认存储目录。并实例化
 		File file = new File(Environment.getExternalStorageDirectory()
 				+ File.separator + "gprs" + File.separator,
-				day.getSaveFileName());
+				app.day.getSaveFileName());
 		if (!file.exists()) {
 			File parentFile = file.getParentFile();
 			if (!parentFile.exists())
 				parentFile.mkdirs();
 		}
-		{
-			// 如果文件已经存在了，取出今天已经保存的数据，然后累加，因为关机后数据会被清除
-			if (day.getDay().equals(GPRSService.OldDay.getDay()))
-				day.add(GPRSService.OldDay);// 加上老的数据
-			saveMM(file, day);
-		}
+
+		saveMM(app, file, app.day);
+
 	}
 
 	/**
@@ -286,52 +267,74 @@ public class MainActivity extends Activity {
 	 * @return
 	 * @throws IOException
 	 */
-	private static void saveMM(File file, DayM dayM) throws IOException {
+	private static void saveMM(MyApp app, File file, DayM dayM)
+			throws IOException {
 		if (dayM.getDay() == null)
 			return;
 		OutputStream fos = new FileOutputStream(file);
 		fos.write(dayM.getSaveStr().getBytes());
 		fos.close();
+		
+		if (AD.debug){
+		RandomAccessFile rf = new RandomAccessFile(Environment.getExternalStorageDirectory()
+				+ File.separator + "gprs" + File.separator + "debug.txt", "rw");
+		// 定义一个类RandomAccessFile的对象，并实例化
+		rf.seek(rf.length());// 将指针移动到文件末尾
+		rf.writeBytes(new Date()+(app.yesDayM == null ? " yesDayM null " : " yesDayM "
+				+ app.yesDayM.toString())
+				+ " day "
+				+ app.day.toString()
+				+ " getGPRS "
+				+ getGRPS()
+				+ " getTotal "
+				+ getTotal()
+				+ " app.gprs "
+				+ app.gprs
+				+ " app.total "
+				+ app.total+"\n");
+		rf.close();// 关闭文件流
+		}
 	}
 
-	public static DayM getCurDateM() throws IOException {
+	public static DayM getCurDateM()  {
 		return getM(Environment.getExternalStorageDirectory() + File.separator
-				+ "gprs" + File.separator + format.format(new Date()) + ".log");
+				+ "gprs" + File.separator + MyApp.format.format(new Date()) + ".log");
 	}
 
 	/**
 	 * 取得文件里面已经保存的流量数据
 	 * 
 	 * @param filename
-	 * @return
+	 * @return DayM
 	 * @throws IOException
-	 * @throws Exception
 	 */
-	private static DayM getM(String filename) throws IOException {
-		return getM(new File(filename));
+	private static DayM getM(String filename)  {
+		try {
+			return getM(new File(filename));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return MyApp.zero;
 	}
 
 	/**
-	 * @throws IOException
-	 *             取得文件里面已经保存的流量数据
+	 * 取得文件里面已经保存的流量数据
 	 * 
 	 * @param file
-	 * @return
-	 * @throws Exception
-	 * @throws
+	 * @return DayM
+	 * @throws IOException
 	 */
 	private static DayM getM(File file) throws IOException {
-		DayM ret = zero;
+		DayM ret = MyApp.zero;
 		if (file.exists()) {
 			byte[] bytes = new byte[(int) file.length()];
-			InputStream fin;
-
-			fin = new FileInputStream(file);
+			InputStream fin = new FileInputStream(file);
 			fin.read(bytes);
 			String content = new String(bytes);
 			String[] s = content.split(" ");
 			ret = new DayM(file.getName().substring(0, 10),
 					Double.valueOf(s[0]), Double.valueOf(s[1]));
+			fin.close();
 		}
 
 		return ret;
@@ -342,17 +345,16 @@ public class MainActivity extends Activity {
 	 * 
 	 * @return
 	 * @throws IOException
-	 * @throws Exception
 	 */
 	public static DayM getMM() throws IOException {
 		DayM month = new DayM();
 		File file = new File(Environment.getExternalStorageDirectory()
 				+ File.separator + "gprs");
 		if (!file.exists())
-			return zero;
+			return MyApp.zero;
 		File[] files = file.listFiles();
 		Date d = new Date();
-		String s = format.format(d).substring(0, 7);
+		String s = MyApp.format.format(d).substring(0, 7);
 		for (File f : files) {
 			if (!f.getName().startsWith(s))
 				continue;
@@ -362,11 +364,11 @@ public class MainActivity extends Activity {
 		return month;
 	}
 
-	private static double getGRPS() {
+	static double getGRPS() {
 		return getData(0) + getData(1);
 	}
 
-	private static double getTotal() {
+	static double getTotal() {
 		return getData(2) + getData(3);
 	}
 

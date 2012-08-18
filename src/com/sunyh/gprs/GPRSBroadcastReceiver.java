@@ -15,7 +15,7 @@ public class GPRSBroadcastReceiver extends BroadcastReceiver {
 	@Override
 	public void onReceive(Context ctx, Intent arg1) {
 		Log.e("GPRSBroadcastReceiver ", " onReceive");
-		Intent intent= new Intent(ctx, GPRSService.class);
+		Intent intent= new Intent(ctx.getApplicationContext(), GPRSService.class);
 		ctx.startService(intent);
 	}
 }

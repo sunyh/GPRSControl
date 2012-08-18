@@ -4,6 +4,7 @@ http://my.oschina.net/sunyh/blog
 外链地址
 http://dl.dbank.com/c0vsnm12fg
 
+详细介绍
 一款开源共享的GPRS流量监控软件！
 
 没有华丽的外表，只有实用的功能！
@@ -14,9 +15,12 @@ http://dl.dbank.com/c0vsnm12fg
 可以用于2.2及以上的系统。
 代码共享地址,您需要就可以forked他
 https://github.com/sunyh/GPRSControl
-联系方式：QQ 229006881 Tel:13816856365
+联系方式：QQ群: 253057635 Tel:13816856365
 
-
+更新日志
+20120818 version 1.4
+1:修正某些机型的错误
+2：提升性能
 2012729 version 1.3
 1：修改特定情况下统计错误
 2：增加设置键

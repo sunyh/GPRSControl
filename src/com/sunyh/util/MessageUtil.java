@@ -8,7 +8,6 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Vibrator;
 import android.widget.Toast;
 
 import com.sunyh.gprs.MainActivity;
@@ -35,9 +34,9 @@ public class MessageUtil {
 	}
 
 	public static void showInfo4Activity(Activity ctx, String tag, String info) {
-		Vibrator vib = (Vibrator) ctx
-				.getSystemService(Service.VIBRATOR_SERVICE);
-		vib.vibrate(60 * 3);
+//		Vibrator vib = (Vibrator) ctx
+//				.getSystemService(Service.VIBRATOR_SERVICE);
+//		vib.vibrate(60 * 3);
 
 		Toast.makeText(ctx, info, Toast.LENGTH_LONG).show();
 	}
@@ -54,9 +53,9 @@ public class MessageUtil {
 		int icon = R.drawable.icon;
 		Notification notification = new Notification(icon, "国产GPRS流量监控",
 				System.currentTimeMillis());
-		notification.defaults |= Notification.DEFAULT_VIBRATE;
-		long[] vibrate = { 0, 100 };
-		notification.vibrate = vibrate;
+//		notification.defaults |= Notification.DEFAULT_VIBRATE;
+//		long[] vibrate = { 0, 100 };
+//		notification.vibrate = vibrate;
 
 		// 在程序代码中使用RemoteViews的方法来定义image和text。然后把RemoteViews对象传到contentView字段
 		// RemoteViews remoteViews = new RemoteViews(ctx.getPackageName(),

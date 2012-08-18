@@ -1,6 +1,6 @@
 
 delete:
-     [echo] building project... 版本为 1.3
+     [echo] building project... 版本为 1.4
      [echo] 先删除历史文件
    [delete] Deleting directory H:\apache-ant-1.8.4\bin\gprs-10010-安智市场
 
@@ -8,104 +8,159 @@ create:
     [mkdir] Created dir: H:\apache-ant-1.8.4\bin\gprs-10010-安智市场
 
 copyFile:
-     [echo] 从 H:/work/eclipse-SDK-3.7-win32/eclipse/workspace/gprs拷贝文件到
-     [copy] Copying 95 files to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\.classpath to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\.classpath
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\.project to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\.project
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\.settings\org.eclipse.core.resources.prefs to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\.settings\org.eclipse.core.resources.prefs
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\AndroidManifest.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\AndroidManifest.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\Desktop.ini to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\Desktop.ini
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\AndroidManifest.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\AndroidManifest.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes.dex to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes.dex
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\BuildConfig.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\BuildConfig.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\DayM.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\DayM.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\GPRSBroadcastReceiver.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\GPRSBroadcastReceiver.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\GPRSService$1.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\GPRSService$1.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\GPRSService.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\GPRSService.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MainActivity$1.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\MainActivity$1.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MainActivity$2.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\MainActivity$2.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MainActivity.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\MainActivity.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MySimpleAdapter$SimpleFilter.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\MySimpleAdapter$SimpleFilter.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MySimpleAdapter$ViewBinder.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\MySimpleAdapter$ViewBinder.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\MySimpleAdapter.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\MySimpleAdapter.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\NetworkUtil.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\NetworkUtil.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\PropertiesUtil.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\PropertiesUtil.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$attr.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$attr.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$dimen.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$dimen.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$drawable.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$drawable.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$id.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$id.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$layout.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$layout.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$menu.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$menu.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$string.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$string.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R$style.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$style.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\R.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\SettingActivity$1.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\SettingActivity$1.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\SettingActivity$2.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\SettingActivity$2.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\SettingActivity.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\SettingActivity.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\Status.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\Status.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\Version.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\Version.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\gprs\Warning.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\Warning.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\util\MessageUtil$1.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\util\MessageUtil$1.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\classes\com\sunyh\util\MessageUtil.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\util\MessageUtil.class
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\gprs.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\gprs.apk
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\jarlist.cache to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\jarlist.cache
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\res\drawable-hdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\res\drawable-hdpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\res\drawable-hdpi\icon.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\res\drawable-hdpi\icon.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\res\drawable-ldpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\res\drawable-ldpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\res\drawable-mdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\res\drawable-mdpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\bin\resources.ap_ to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\resources.ap_
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build.properties to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build.properties
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build0.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build0.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build0.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build0.xml.log
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10010.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10010.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10020.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10020.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10030.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10030.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10040.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10040.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10050.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10050.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10070.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10070.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10110.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10110.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10120.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10120.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10190.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10190.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10370.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10370.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10550.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10550.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10551.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10551.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\build\build10552.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10552.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\gen\com\sunyh\gprs\BuildConfig.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gen\com\sunyh\gprs\BuildConfig.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\gen\com\sunyh\gprs\R.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gen\com\sunyh\gprs\R.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\libs\android-support-v4.jar to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\libs\android-support-v4.jar
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\libs\gfansdk_statistics.jar to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\libs\gfansdk_statistics.jar
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\libs\youmi-android_v3.07_2012-05-04.jar to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\libs\youmi-android_v3.07_2012-05-04.jar
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\proguard-project.txt to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\proguard-project.txt
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\project.properties to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\project.properties
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\readme.txt to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\readme.txt
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\drawable-hdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\drawable-hdpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\drawable-hdpi\icon.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\drawable-hdpi\icon.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\drawable-ldpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\drawable-ldpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\drawable-mdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\drawable-mdpi\ic_launcher.png
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\layout\list.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\layout\list.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\layout\main.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\layout\main.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\layout\setting.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\layout\setting.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\layout\view.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\layout\view.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\menu\activity_main.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\menu\activity_main.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\values-large\dimens.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\values-large\dimens.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\values\dimens.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\values\dimens.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\values\strings.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\values\strings.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\res\values\styles.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\values\styles.xml
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\DayM.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\DayM.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\GPRSBroadcastReceiver.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\GPRSBroadcastReceiver.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\GPRSService.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\GPRSService.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\MainActivity.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\MainActivity.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\MySimpleAdapter.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\MySimpleAdapter.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\NetworkUtil.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\NetworkUtil.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\PropertiesUtil.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\PropertiesUtil.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\SettingActivity.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\SettingActivity.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\Status.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\Status.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\Version.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\Version.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\gprs\Warning.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\Warning.java
-     [copy] Copying H:\work\eclipse-SDK-3.7-win32\eclipse\workspace\gprs\src\com\sunyh\util\MessageUtil.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\util\MessageUtil.java
-     [copy] Copied 34 empty directories to 3 empty directories under H:\apache-ant-1.8.4\bin\gprs-10010-安智市场
+     [echo] 从 H:/Android GPRS/gprs拷贝文件到
+     [copy] Copying 150 files to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场
+     [copy] Copying H:\Android GPRS\gprs\.classpath to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\.classpath
+     [copy] Copying H:\Android GPRS\gprs\.project to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\.project
+     [copy] Copying H:\Android GPRS\gprs\.settings\org.eclipse.core.resources.prefs to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\.settings\org.eclipse.core.resources.prefs
+     [copy] Copying H:\Android GPRS\gprs\AndroidManifest.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\AndroidManifest.xml
+     [copy] Copying H:\Android GPRS\gprs\android.key to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\android.key
+     [copy] Copying H:\Android GPRS\gprs\bin\AndroidManifest.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\AndroidManifest.xml
+     [copy] Copying H:\Android GPRS\gprs\bin\classes.dex to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes.dex
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\AD.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\AD.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\BuildConfig.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\BuildConfig.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\DBHelper.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\DBHelper.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\DayM.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\DayM.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\GPRSBroadcastReceiver.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\GPRSBroadcastReceiver.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\GPRSService$1.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\GPRSService$1.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\GPRSService.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\GPRSService.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\MainActivity$1.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\MainActivity$1.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\MainActivity.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\MainActivity.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\MyApp.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\MyApp.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\NetworkUtil.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\NetworkUtil.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\PropertiesUtil.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\PropertiesUtil.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$attr.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$attr.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$dimen.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$dimen.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$drawable.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$drawable.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$id.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$id.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$layout.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$layout.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$string.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$string.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R$style.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R$style.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\R.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\R.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\SettingActivity$1.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\SettingActivity$1.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\SettingActivity$2.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\SettingActivity$2.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\SettingActivity.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\SettingActivity.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\Status.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\Status.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\gprs\Warning.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\gprs\Warning.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\util\MessageUtil$1.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\util\MessageUtil$1.class
+     [copy] Copying H:\Android GPRS\gprs\bin\classes\com\sunyh\util\MessageUtil.class to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes\com\sunyh\util\MessageUtil.class
+     [copy] Copying H:\Android GPRS\gprs\bin\com.sunyh.gprs.MainActivity.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\com.sunyh.gprs.MainActivity.apk
+     [copy] Copying H:\Android GPRS\gprs\bin\res\drawable-hdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\res\drawable-hdpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\bin\res\drawable-hdpi\icon.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\res\drawable-hdpi\icon.png
+     [copy] Copying H:\Android GPRS\gprs\bin\res\drawable-ldpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\res\drawable-ldpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\bin\res\drawable-mdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\res\drawable-mdpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\bin\resources.ap_ to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\resources.ap_
+     [copy] Copying H:\Android GPRS\gprs\build.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build.properties to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build.properties
+     [copy] Copying H:\Android GPRS\gprs\build\build.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build0.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build0.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build0.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build0.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10010.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10010.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10010.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10010.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10020.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10020.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10020.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10020.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10030.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10030.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10030.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10030.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10040.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10040.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10040.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10040.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10050.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10050.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10050.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10050.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10070.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10070.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10070.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10070.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10110.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10110.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10110.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10110.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10120.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10120.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10120.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10120.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10190.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10190.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10190.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10190.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10370.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10370.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10370.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10370.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10550.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10550.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10550.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10550.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10551.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10551.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10551.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10551.xml.log
+     [copy] Copying H:\Android GPRS\gprs\build\build10552.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10552.xml
+     [copy] Copying H:\Android GPRS\gprs\build\build10552.xml.log to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\build\build10552.xml.log
+     [copy] Copying H:\Android GPRS\gprs\gen\com\sunyh\gprs\BuildConfig.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gen\com\sunyh\gprs\BuildConfig.java
+     [copy] Copying H:\Android GPRS\gprs\gen\com\sunyh\gprs\R.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gen\com\sunyh\gprs\R.java
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-0-有米-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-0-有米-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10010-安智市场-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10010-安智市场-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10020-机锋-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10020-机锋-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10030-安卓市场-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10030-安卓市场-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10040-联想市场-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10040-联想市场-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10050-应用汇-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10050-应用汇-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10070-木蚂蚁市场-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10070-木蚂蚁市场-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10110-91手机商店-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10110-91手机商店-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10120-易优市场-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10120-易优市场-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10190-360软件下载-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10190-360软件下载-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10370-搜狐-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10370-搜狐-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10550-百度-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10550-百度-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10551-爱卓网-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10551-爱卓网-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\gprs-realse-1.3\gprs-10552-手机之家-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\gprs-realse-1.3\gprs-10552-手机之家-release-1.3.apk
+     [copy] Copying H:\Android GPRS\gprs\libs\android-support-v4.jar to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\libs\android-support-v4.jar
+     [copy] Copying H:\Android GPRS\gprs\libs\gfansdk_statistics.jar to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\libs\gfansdk_statistics.jar
+     [copy] Copying H:\Android GPRS\gprs\libs\kuguopush-1.1.2.jar to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\libs\kuguopush-1.1.2.jar
+     [copy] Copying H:\Android GPRS\gprs\libs\youmi-android_v3.07_2012-05-04.jar to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\libs\youmi-android_v3.07_2012-05-04.jar
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk 安卓\无标题.jpg to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\hiapk 安卓\无标题.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk 安卓\无标题.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\hiapk 安卓\无标题.png
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk 安卓\无标题1.jpg to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\hiapk 安卓\无标题1.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk 安卓\无标题1.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\hiapk 安卓\无标题1.png
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk 安卓\无标题2.jpg to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\hiapk 安卓\无标题2.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk 安卓\无标题2.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\hiapk 安卓\无标题2.png
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk 安卓\无标题提示.jpg to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\hiapk 安卓\无标题提示.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\hiapk 安卓\无标题提示.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\hiapk 安卓\无标题提示.png
+     [copy] Copying H:\Android GPRS\gprs\pic\ic_launcher-web - 副本 (2).jpg to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\ic_launcher-web - 副本 (2).jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\ic_launcher-web - 副本.jpg to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\ic_launcher-web - 副本.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\ic_launcher-web.jpg to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\ic_launcher-web.jpg
+     [copy] Copying H:\Android GPRS\gprs\pic\抓猫网截图\无标题.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\抓猫网截图\无标题.png
+     [copy] Copying H:\Android GPRS\gprs\pic\抓猫网截图\无标题1.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\抓猫网截图\无标题1.png
+     [copy] Copying H:\Android GPRS\gprs\pic\抓猫网截图\无标题2.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\抓猫网截图\无标题2.png
+     [copy] Copying H:\Android GPRS\gprs\pic\抓猫网截图\无标题提示.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\抓猫网截图\无标题提示.png
+     [copy] Copying H:\Android GPRS\gprs\pic\无标题.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\无标题.png
+     [copy] Copying H:\Android GPRS\gprs\pic\无标题1.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\无标题1.png
+     [copy] Copying H:\Android GPRS\gprs\pic\无标题2.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\无标题2.png
+     [copy] Copying H:\Android GPRS\gprs\pic\无标题36 - 副本.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\无标题36 - 副本.png
+     [copy] Copying H:\Android GPRS\gprs\pic\无标题36.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\无标题36.png
+     [copy] Copying H:\Android GPRS\gprs\pic\无标题48.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\无标题48.png
+     [copy] Copying H:\Android GPRS\gprs\pic\无标题72.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\无标题72.png
+     [copy] Copying H:\Android GPRS\gprs\pic\无标题提示.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\无标题提示.png
+     [copy] Copying H:\Android GPRS\gprs\pic\有米应用截图\无标题.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\有米应用截图\无标题.png
+     [copy] Copying H:\Android GPRS\gprs\pic\有米应用截图\无标题1.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\有米应用截图\无标题1.png
+     [copy] Copying H:\Android GPRS\gprs\pic\有米应用截图\无标题2.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\有米应用截图\无标题2.png
+     [copy] Copying H:\Android GPRS\gprs\pic\有米应用截图\无标题提示.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\有米应用截图\无标题提示.png
+     [copy] Copying H:\Android GPRS\gprs\pic\百度应用截图\无标题.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\百度应用截图\无标题.png
+     [copy] Copying H:\Android GPRS\gprs\pic\百度应用截图\无标题1.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\百度应用截图\无标题1.png
+     [copy] Copying H:\Android GPRS\gprs\pic\百度应用截图\无标题2.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\百度应用截图\无标题2.png
+     [copy] Copying H:\Android GPRS\gprs\pic\百度应用截图\无标题提示.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\pic\百度应用截图\无标题提示.png
+     [copy] Copying H:\Android GPRS\gprs\proguard-project.txt to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\proguard-project.txt
+     [copy] Copying H:\Android GPRS\gprs\project.properties to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\project.properties
+     [copy] Copying H:\Android GPRS\gprs\readme.txt to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\readme.txt
+     [copy] Copying H:\Android GPRS\gprs\res\drawable-hdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\drawable-hdpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\res\drawable-hdpi\icon.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\drawable-hdpi\icon.png
+     [copy] Copying H:\Android GPRS\gprs\res\drawable-ldpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\drawable-ldpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\res\drawable-mdpi\ic_launcher.png to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\drawable-mdpi\ic_launcher.png
+     [copy] Copying H:\Android GPRS\gprs\res\layout\list.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\layout\list.xml
+     [copy] Copying H:\Android GPRS\gprs\res\layout\main.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\layout\main.xml
+     [copy] Copying H:\Android GPRS\gprs\res\layout\setting.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\layout\setting.xml
+     [copy] Copying H:\Android GPRS\gprs\res\layout\view.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\layout\view.xml
+     [copy] Copying H:\Android GPRS\gprs\res\values-large\dimens.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\values-large\dimens.xml
+     [copy] Copying H:\Android GPRS\gprs\res\values\dimens.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\values\dimens.xml
+     [copy] Copying H:\Android GPRS\gprs\res\values\strings.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\values\strings.xml
+     [copy] Copying H:\Android GPRS\gprs\res\values\styles.xml to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\res\values\styles.xml
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\AD.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\AD.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\DBHelper.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\DBHelper.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\DayM.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\DayM.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\GPRSBroadcastReceiver.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\GPRSBroadcastReceiver.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\GPRSService.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\GPRSService.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\MainActivity.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\MainActivity.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\MyApp.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\MyApp.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\NetworkUtil.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\NetworkUtil.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\PropertiesUtil.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\PropertiesUtil.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\SettingActivity.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\SettingActivity.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\Status.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\Status.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\gprs\Warning.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\Warning.java
+     [copy] Copying H:\Android GPRS\gprs\src\com\sunyh\util\MessageUtil.java to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\util\MessageUtil.java
+     [copy] Copied 40 empty directories to 4 empty directories under H:\apache-ant-1.8.4\bin\gprs-10010-安智市场
 
 init:
      [echo] Creating all output directories 
@@ -119,9 +174,7 @@ resource-src:
 
 compile:
      [echo] java 编译为class文件
-    [javac] Compiling 13 source files to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes
-    [javac] 注意：H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\src\com\sunyh\gprs\MySimpleAdapter.java 使用了未经检查或不安全的操作。
-    [javac] 注意：要了解详细信息，请使用 -Xlint:unchecked 重新编译。
+    [javac] Compiling 14 source files to H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\classes
 
 dex:
      [echo] 转换class文件为dex文件
@@ -144,7 +197,6 @@ jarsigner:
      [exec]   正在签名： res/layout/main.xml
      [exec]   正在签名： res/layout/setting.xml
      [exec]   正在签名： res/layout/view.xml
-     [exec]   正在签名： res/menu/activity_main.xml
      [exec]   正在签名： AndroidManifest.xml
      [exec]   正在签名： resources.arsc
      [exec]   正在签名： res/drawable-hdpi/ic_launcher.png
@@ -155,25 +207,24 @@ jarsigner:
 
 zipalign:
      [echo] zipalign 优化
-     [exec] Verifying alignment of H:/apache-ant-1.8.4/bin/gprs-10010-安智市场/bin/gprs-10010-安智市场-release-1.3.apk (4)...
+     [exec] Verifying alignment of H:/apache-ant-1.8.4/bin/gprs-10010-安智市场/bin/gprs-10010-安智市场-release-1.4.apk (4)...
      [exec]       50 META-INF/MANIFEST.MF (OK - compressed)
-     [exec]      617 META-INF/ANDROID.SF (OK - compressed)
-     [exec]     1251 META-INF/ANDROID.RSA (OK - compressed)
-     [exec]     1951 res/layout/list.xml (OK - compressed)
-     [exec]     2363 res/layout/main.xml (OK - compressed)
-     [exec]     2733 res/layout/setting.xml (OK - compressed)
-     [exec]     3511 res/layout/view.xml (OK - compressed)
-     [exec]     3846 res/menu/activity_main.xml (OK - compressed)
-     [exec]     4139 AndroidManifest.xml (OK - compressed)
-     [exec]     5708 resources.arsc (OK)
-     [exec]     9200 res/drawable-hdpi/ic_launcher.png (OK)
-     [exec]    37584 res/drawable-hdpi/icon.png (OK)
-     [exec]    38592 res/drawable-ldpi/ic_launcher.png (OK)
-     [exec]    40208 res/drawable-mdpi/ic_launcher.png (OK)
-     [exec]    49155 classes.dex (OK - compressed)
+     [exec]      582 META-INF/ANDROID.SF (OK - compressed)
+     [exec]     1183 META-INF/ANDROID.RSA (OK - compressed)
+     [exec]     1882 res/layout/list.xml (OK - compressed)
+     [exec]     2294 res/layout/main.xml (OK - compressed)
+     [exec]     2664 res/layout/setting.xml (OK - compressed)
+     [exec]     3442 res/layout/view.xml (OK - compressed)
+     [exec]     3770 AndroidManifest.xml (OK - compressed)
+     [exec]     5840 resources.arsc (OK)
+     [exec]     9148 res/drawable-hdpi/ic_launcher.png (OK)
+     [exec]    37532 res/drawable-hdpi/icon.png (OK)
+     [exec]    38540 res/drawable-ldpi/ic_launcher.png (OK)
+     [exec]    40156 res/drawable-mdpi/ic_launcher.png (OK)
+     [exec]    49103 classes.dex (OK - compressed)
      [exec] Verification succesful
 
 out:
      [echo] 统一输出到一个目录
-     [copy] Copying 1 file to H:\apache-ant-1.8.4\bin\gprs-realse-1.3
-     [copy] Copying H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\gprs-10010-安智市场-release-1.3.apk to H:\apache-ant-1.8.4\bin\gprs-realse-1.3\gprs-10010-安智市场-release-1.3.apk
+     [copy] Copying 1 file to H:\apache-ant-1.8.4\bin\gprs-realse-1.4
+     [copy] Copying H:\apache-ant-1.8.4\bin\gprs-10010-安智市场\bin\gprs-10010-安智市场-release-1.4.apk to H:\apache-ant-1.8.4\bin\gprs-realse-1.4\gprs-10010-安智市场-release-1.4.apk

@@ -19,14 +19,14 @@ public class SettingActivity extends Activity {
 
 	protected void onResume() {
 		super.onResume();
-		if (Version.GF)
+		if (AD.GF)
 			GFAgent.onResume(this);
 	}
 
 	protected void onPause() {
 		super.onPause();
 
-		if (Version.GF)
+		if (AD.GF)
 			GFAgent.onPause(this);
 	}
 
@@ -34,23 +34,23 @@ public class SettingActivity extends Activity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.setting);
-
-		PropertiesUtil.prop = PropertiesUtil.loadConfig();
+		final MyApp app = (MyApp) this.getApplication();
+		app.prop = PropertiesUtil.loadConfig();
 
 		TextView textView = (TextView) findViewById(R.id.dayGPRSMAX);
-		textView.setText(PropertiesUtil.getProp("dayGPRSMax"));
+		textView.setText(app.getProp("dayGPRSMax"));
 
 		textView = (TextView) findViewById(R.id.dayWifiMax);
-		textView.setText(PropertiesUtil.getProp("dayWifiMax"));
+		textView.setText(app.getProp("dayWifiMax"));
 
 		textView = (TextView) findViewById(R.id.monthGPRSMAX);
-		textView.setText(PropertiesUtil.getProp("monthGPRSMax"));
+		textView.setText(app.getProp("monthGPRSMax"));
 
 		textView = (TextView) findViewById(R.id.monthWifiMax);
-		textView.setText(PropertiesUtil.getProp("monthWifiMax"));
+		textView.setText(app.getProp("monthWifiMax"));
 
 		CheckBox checkBox = (CheckBox) findViewById(R.id.checkbox1);
-		checkBox.setChecked(Boolean.valueOf(PropertiesUtil.getProp("checkbox1")));
+		checkBox.setChecked(Boolean.valueOf(app.getProp("checkbox1")));
 
 		Button bOK = (Button) findViewById(R.id.ok);
 		bOK.setOnClickListener(new OnClickListener() {
@@ -62,20 +62,20 @@ public class SettingActivity extends Activity {
 				startActivity(intent);
 
 				TextView textView = (TextView) findViewById(R.id.dayGPRSMAX);
-				PropertiesUtil.putProp("dayGPRSMax", textView.getText());
+				app.putProp("dayGPRSMax", textView.getText());
 
 				textView = (TextView) findViewById(R.id.dayWifiMax);
-				PropertiesUtil.putProp("dayWifiMax", textView.getText());
+				app.putProp("dayWifiMax", textView.getText());
 
 				textView = (TextView) findViewById(R.id.monthGPRSMAX);
-				PropertiesUtil.putProp("monthGPRSMax", textView.getText());
+				app.putProp("monthGPRSMax", textView.getText());
 				textView = (TextView) findViewById(R.id.monthWifiMax);
-				PropertiesUtil.putProp("monthWifiMax", textView.getText());
+				app.putProp("monthWifiMax", textView.getText());
 
 				CheckBox checkBox = (CheckBox) findViewById(R.id.checkbox1);
-				PropertiesUtil.putProp("checkbox1", checkBox.isChecked());
+				app.putProp("checkbox1", checkBox.isChecked());
 
-				PropertiesUtil.saveConfig(PropertiesUtil.prop);
+				PropertiesUtil.saveConfig(app.prop);
 
 				Warning.warns1 = Warning.initWarning();
 				Warning.warns2 = Warning.initWarning();
@@ -94,7 +94,7 @@ public class SettingActivity extends Activity {
 			}
 		});
 
-		if (Version.youmi) {
+		if (AD.youmi) {
 			AdManager.init(this, "198762f972d578e2", "119ca3646511d528", 30,
 					false);
 			LinearLayout adViewLayout = (LinearLayout) findViewById(R.id.adViewLayout3);
